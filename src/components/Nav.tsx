@@ -34,7 +34,7 @@ export function Nav() {
           }`}
         >
           <a href="#top" className="font-display hidden px-3 text-sm font-bold sm:block">
-            {profile.first}<span className="text-sky-deep">.</span>
+            {profile.first}
           </a>
           {nav.map((n) => (
             <a
