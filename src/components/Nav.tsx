@@ -27,9 +27,9 @@ export function Nav() {
       <div className="fixed inset-x-0 top-0 z-50 h-1 bg-transparent">
         <div className="h-full origin-left bg-gradient-to-r from-sky-deep via-mint-deep to-lilac-deep" style={{ transform: `scaleX(${progress})` }} />
       </div>
-      <header className="fixed inset-x-0 top-3 z-40 flex justify-center px-4">
+      <header className="fixed inset-x-0 top-3 z-40 flex justify-center px-2 sm:px-4">
         <nav
-          className={`glass flex items-center gap-1 rounded-full px-2 py-1.5 shadow-lg shadow-sky-deep/5 transition-all duration-500 ${
+          className={`glass flex max-w-full items-center gap-0.5 overflow-x-auto rounded-full px-1.5 py-1.5 sm:gap-1 sm:px-2 shadow-lg shadow-sky-deep/5 transition-all duration-500 ${
             scrolled ? 'translate-y-0 opacity-100' : 'translate-y-0 opacity-95'
           }`}
         >
@@ -40,7 +40,7 @@ export function Nav() {
             <a
               key={n.id}
               href={`#${n.id}`}
-              className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors sm:text-sm ${
+              className={`whitespace-nowrap rounded-full px-2 py-1.5 text-xs font-medium sm:px-3 transition-colors sm:text-sm ${
                 active === n.id ? 'bg-ink text-white' : 'text-muted hover:bg-sky'
               } ${n.id === 'top' ? 'sm:hidden' : ''}`}
             >

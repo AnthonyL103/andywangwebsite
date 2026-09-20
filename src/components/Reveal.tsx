@@ -24,16 +24,19 @@ export function Reveal({ children, delay = 0, from = 'up', className = '' }: Pro
   )
 }
 
-/** Image wrapper that unveils top-to-bottom on scroll. */
+/**
+ * Image wrapper that unveils top-to-bottom on scroll.
+ * The observed element must stay unclipped — clip-path on the observed node
+ * itself makes Chromium report zero intersection forever, so the clip lives
+ * on an inner child instead.
+ */
 export function Unveil({ children, delay = 0, className = '' }: { children: ReactNode; delay?: number; className?: string }) {
   const [ref, inView] = useInView<HTMLDivElement>(0.1)
   return (
-    <div
-      ref={ref}
-      style={{ '--d': `${delay}ms` } as CSSProperties}
-      className={`unveil ${inView ? 'in' : ''} ${className}`}
-    >
-      {children}
+    <div ref={ref} className={className}>
+      <div style={{ '--d': `${delay}ms` } as CSSProperties} className={`unveil ${inView ? 'in' : ''}`}>
+        {children}
+      </div>
     </div>
   )
 }
