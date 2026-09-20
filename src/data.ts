@@ -1,16 +1,15 @@
 import drone from './assets/photos/dronedlying.jpg'
 import aquasense from './assets/photos/aquasensephoto.jpg'
-import arduino from './assets/photos/arduinosetup.jpg'
 import vexWin from './assets/photos/vexteamwin.jpg'
 import vexComp from './assets/photos/vexcompphoto.jpg'
 import stemExpo from './assets/photos/stemexpo.jpg'
 import band from './assets/photos/bandphoto.jpg'
-import friends from './assets/photos/friendsmisc.jpg'
+import usOpen from './assets/photos/usopenchampionphoto.jpeg'
 import selfie from './assets/photos/selfiemisc.jpg'
 import soccer from './assets/photos/soccermisc.jpg'
 import dad from './assets/photos/andyDadmisc.jpg'
 
-export const photos = { drone, aquasense, arduino, vexWin, vexComp, stemExpo, band, friends, selfie, soccer, dad }
+export const photos = { drone, aquasense, vexWin, vexComp, stemExpo, band, usOpen, selfie, soccer, dad }
 
 export const profile = {
   name: 'Andy Dakai Wang',
@@ -24,7 +23,7 @@ export const profile = {
   sat: '1550',
   tagline: 'Engineer. Builder. Athlete. Mentor.',
   blurb:
-    'I design and build things that protect water, fly, and win — from lake-monitoring drones to championship robots — and I love teaching others to do the same.',
+    'I design and build things that protect water, fly, and win, from lake-monitoring drones to championship robots, and I love teaching others to do the same.',
 }
 
 export const stats = [
@@ -57,7 +56,7 @@ export const projects: Project[] = [
     summary:
       'A custom quadcopter that flies over a local lake and spots harmful algae blooms from the air.',
     bullets: [
-      'Designed and built the entire drone solo — CAD-modeled, 3D-printed airframe with flight controller, ESCs, brushless motors and telemetry.',
+      'Designed and built the entire drone solo, with a CAD-modeled, 3D-printed airframe with flight controller, ESCs, brushless motors and telemetry.',
       'Wrote Python + OpenCV computer vision that identifies algae blooms from 100+ aerial images with 100% accuracy.',
       'Layered on trophic state index (TSI) risk analysis and ran 20+ flight tests to refine stability and data quality.',
     ],
@@ -72,17 +71,14 @@ export const projects: Project[] = [
     role: 'Lead Designer & Builder',
     date: 'Jan 2026 – Present',
     summary:
-      'A solar-powered buoy that finds hypoxia-risk zones before they harm aquatic life — at a fraction of commercial cost.',
+      'A solar-powered buoy that finds hypoxia-risk zones before they harm aquatic life, at a fraction of commercial cost.',
     bullets: [
-      'Five sensors — pH, dissolved oxygen, turbidity, conductivity, temperature — feeding Arduino electronics in one compact body.',
+      'Five sensors (pH, dissolved oxygen, turbidity, conductivity, temperature) feeding Arduino electronics in one compact body.',
       'Cut hardware cost to $400, a fraction of commercial competitors, and validated it at 3 locations.',
       'Iterated waterproof housings in CAD and additive manufacturing for sealing, buoyancy and stability.',
     ],
     tags: ['Arduino', 'Sensors', 'Fusion 360', 'Solar'],
-    images: [
-      { src: photos.aquasense, alt: 'AquaSense buoy floating in water', pos: '50% 55%' },
-      { src: photos.arduino, alt: 'Arduino sensor test rig on a breadboard', pos: '50% 60%' },
-    ],
+    images: [{ src: photos.aquasense, alt: 'AquaSense buoy floating in water', pos: '50% 55%' }],
     chip: '$400 build cost',
   },
   {
@@ -92,7 +88,7 @@ export const projects: Project[] = [
     role: 'Lead Designer, Builder & Driver',
     date: 'Sep 2022 – Mar 2026',
     summary:
-      'Four seasons leading mechanical design and driving under match pressure — capped by a U.S. Open title.',
+      'Four seasons leading mechanical design and driving under match pressure, capped by a U.S. Open title.',
     bullets: [
       'Champion of the Washington State VEX Competition (40+ teams) and the VEX Robotics U.S. Open (100+ teams), 2023.',
       'Optimized drivetrains, intakes, arms, gear ratios and PTOs; designed the team logo and robot cosmetics.',
@@ -132,18 +128,6 @@ export const buildingNow = [
     ],
     tags: ['Fusion 360', 'Sustainability', 'Architecture'],
   },
-  {
-    title: 'Brown University Pre-College Research',
-    role: 'Independent Researcher',
-    date: 'July 2024',
-    icon: 'flask' as const,
-    points: [
-      'Studied water supply & sustainable treatment under Dr. Indrek Kulaots.',
-      'Simulated stormwater management and analysed urban hydrology data.',
-      'Built water filtration prototypes in a lab setting.',
-    ],
-    tags: ['Hydrology', 'Research', 'Filtration'],
-  },
 ]
 
 export const honors = [
@@ -174,7 +158,6 @@ export const leadership = [
     date: 'Aug 2024 – Present',
     text: 'Designed the curriculum and taught embedded electronics and C++ to 6+ kids, generating $1,000+ in revenue.',
     tag: 'Entrepreneurship',
-    image: photos.arduino,
   },
   {
     title: 'Robotics Mentor',
@@ -224,8 +207,15 @@ export const leadership = [
     title: 'Content Creator',
     org: 'TikTok · Men’s Fashion',
     date: 'Aug 2025 – Present',
-    text: 'Film, edit and produce style content — 50,000+ views and 3,250+ likes.',
+    text: 'Film, edit and produce style content, with 50,000+ views and 3,250+ likes.',
     tag: 'Creative',
+  },
+  {
+    title: 'Pre-College Researcher',
+    org: 'Brown University',
+    date: 'Jul 2024',
+    text: 'Studied water supply and sustainable treatment under Dr. Indrek Kulaots, simulated stormwater management and built water filtration prototypes in a lab.',
+    tag: 'Research',
   },
 ]
 

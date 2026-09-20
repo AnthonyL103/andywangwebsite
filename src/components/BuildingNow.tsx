@@ -7,7 +7,6 @@ const icons = {
     <path d="M12 2c2.5 2 4 5.5 4 9 0 2-.5 3.7-1.2 5.2L12 22l-2.8-5.8C8.5 14.7 8 13 8 11c0-3.5 1.5-7 4-9Z" />
   ),
   city: <path d="M4 21V9l5-4 5 4v12M14 21V5l6-2v18M4 21h16M9 21v-4h1v4M9 12h1v1H9zm0-4h1v1H9z" />,
-  flask: <path d="M9 3h6M10 3v6l-5.5 9.5A1 1 0 0 0 5.4 20h13.2a1 1 0 0 0 .9-1.5L14 9V3M8 15h8" />,
 }
 
 export function BuildingNow() {
@@ -18,10 +17,10 @@ export function BuildingNow() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-lilac-deep">Right Now</span>
           <h2 className="font-display mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">What I’m building next</h2>
-          <p className="mt-4 text-lg text-muted">Current projects still in motion — and one research stint that started it all.</p>
+          <p className="mt-4 text-lg text-muted">Current projects still in motion.</p>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mx-auto mt-14 grid max-w-4xl gap-6 md:grid-cols-2">
           {buildingNow.map((item, i) => (
             <Reveal key={item.title} delay={i * 130} from="scale">
               <div className="glass group h-full rounded-3xl p-7 shadow-lg shadow-lilac-deep/10 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">

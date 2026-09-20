@@ -14,7 +14,7 @@ export function Projects() {
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-sky-deep">Flagship Projects</span>
           <h2 className="font-display mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Things I’ve engineered</h2>
           <p className="mt-4 text-lg text-muted">
-            Independent builds spanning aerospace, environmental science and competitive robotics — designed, prototyped and tested end to end.
+            Independent builds spanning aerospace, environmental science and competitive robotics, designed, prototyped and tested end to end.
           </p>
         </Reveal>
 

@@ -10,7 +10,7 @@ export function Leadership() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-mint-deep">Leadership & Service</span>
           <h2 className="font-display mt-3 text-4xl font-extrabold tracking-tight sm:text-5xl">Beyond the workbench</h2>
-          <p className="mt-4 text-lg text-muted">Mentoring, teaching and leading — on the field, in the classroom and in the community.</p>
+          <p className="mt-4 text-lg text-muted">Mentoring, teaching and leading, on the field, in the classroom and in the community.</p>
         </Reveal>
 
         <div className="mt-14 columns-1 gap-6 sm:columns-2 lg:columns-3 [&>*]:mb-6 [&>*]:break-inside-avoid">

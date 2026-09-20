@@ -21,7 +21,7 @@ export function Contact() {
             Ready to build<br />something great.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-white/70">
-            Whether it’s a research opportunity, a robotics collaboration, or a college application question — I’d love to hear from you.
+            Whether it’s a research opportunity, a robotics collaboration, or a college application question, and I’d love to hear from you.
           </p>
         </Reveal>
 

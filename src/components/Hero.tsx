@@ -2,7 +2,7 @@ import { useRef, type CSSProperties } from 'react'
 import { photos, profile } from '../data'
 
 const collage = [
-  { src: photos.friends, alt: 'Andy with friends', cls: 'left-[6%] top-0 w-[62%] aspect-[4/3]', rot: -4, depth: 10, anim: 'animate-float' },
+  { src: photos.usOpen, alt: 'Andy celebrating as VEX U.S. Open champion', cls: 'left-[6%] top-0 w-[62%] aspect-[4/3]', rot: -4, depth: 10, anim: 'animate-float' },
   { src: photos.selfie, alt: 'Andy mirror selfie', cls: 'right-0 top-[10%] w-[32%] aspect-[3/4]', rot: 6, depth: 26, anim: 'animate-float-slow' },
   { src: photos.soccer, alt: 'Andy playing soccer', cls: 'left-0 bottom-0 w-[30%] aspect-[3/4]', rot: -7, depth: 32, anim: 'animate-float-slow' },
   { src: photos.dad, alt: 'Andy at a soccer stadium', cls: 'right-[6%] bottom-[2%] w-[54%] aspect-[16/10]', rot: 3, depth: 18, anim: 'animate-float' },
